@@ -39,6 +39,7 @@
     "nwb": "0.12.2",
     "object-assign": "^4.1.0",
     "react": "15.3.2",
+    "react-chromatic": "^0.3.4",
     "react-dom": "15.3.2",
     "react-router": "2.8.1",
     "react-router-scroll": "^0.3.2",
