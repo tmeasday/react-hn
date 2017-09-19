@@ -1,4 +1,4 @@
-var configure = require('react-chromatic/client');
+var chromatic = require('react-chromatic/server').default;
 var express = require('express');
 var React = require('react');
 var renderToString = require('react-dom/server').renderToString;
@@ -6,11 +6,11 @@ var ReactRouter = require('react-router');
 var objectAssign = require('object-assign');
 var HNServerFetch = require('./hn-server-fetch');
 
+var config = require('./chromatic.config');
+chromatic(config);
+
 require('babel-register');
 var routes = require('./src/routes');
-
-var config = require('./chromatic.config');
-configure(config);
 
 var app = express();
 app.set('view engine', 'ejs');
