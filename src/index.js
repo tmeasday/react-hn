@@ -1,6 +1,6 @@
 require('setimmediate')
 
-var chromatic = require('react-chromatic');
+var chromatic = require('react-chromatic').default;
 
 var React = require('react')
 var {render} = require('react-dom')
